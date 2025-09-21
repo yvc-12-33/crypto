@@ -27,6 +27,7 @@ export default function AddToolModal({ onClose }: AddToolModalProps) {
     e.preventDefault();
     const toolData = {
       ...formData,
+      icon_url: formData.iconUrl,
       features: formData.features.filter(f => f.trim() !== ''),
       affiliate_url: formData.affiliate_url || undefined,
     };

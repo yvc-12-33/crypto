@@ -37,6 +37,9 @@ export default function AddICOModal({ onClose }: AddICOModalProps) {
     e.preventDefault();
     const icoData = {
       ...formData,
+      icon_url: formData.iconUrl,
+      start_date: formData.startDate,
+      end_date: formData.endDate,
       website: formData.website || undefined,
       whitepaper: formData.whitepaper || undefined,
       social: Object.fromEntries(

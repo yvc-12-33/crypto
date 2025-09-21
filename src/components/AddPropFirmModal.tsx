@@ -34,11 +34,17 @@ export default function AddPropFirmModal({ onClose }: AddPropFirmModalProps) {
     e.preventDefault();
     const firmData = {
       ...formData,
+      icon_url: formData.iconUrl,
+      min_capital: formData.minCapital,
+      max_capital: formData.maxCapital,
+      profit_split: formData.profitSplit,
+      max_drawdown: formData.maxDrawdown,
+      trading_period: formData.tradingPeriod,
+      affiliate_url: formData.affiliateUrl,
       features: formData.features.filter(f => f.trim() !== ''),
       offers: formData.offers.filter(f => f.trim() !== ''),
       highlights: formData.highlights.filter(f => f.trim() !== ''),
       website: formData.website || undefined,
-      affiliateUrl: formData.affiliateUrl || undefined,
     };
     
     addPropFirm(firmData)

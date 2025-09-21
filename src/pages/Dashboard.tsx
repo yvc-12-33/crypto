@@ -237,7 +237,7 @@ export default function Dashboard() {
                           <td className="px-6 py-4 whitespace-nowrap">
                             <div className="flex items-center">
                               <img 
-                                src={tool.iconUrl} 
+                                src={tool.icon_url} 
                                 alt={tool.name}
                                 className="w-8 h-8 mr-3 rounded"
                                 onError={(e) => {
@@ -308,7 +308,7 @@ export default function Dashboard() {
                     <div key={ico.id} className="border border-gray-200 rounded-lg p-4">
                       <div className="flex items-center mb-3">
                         <img 
-                          src={ico.iconUrl} 
+                          src={ico.icon_url} 
                           alt={ico.name}
                           className="w-8 h-8 mr-3 rounded"
                           onError={(e) => {
@@ -371,7 +371,7 @@ export default function Dashboard() {
                       <div className="flex items-center justify-between mb-3">
                         <div className="flex items-center">
                           <img 
-                            src={firm.iconUrl} 
+                            src={firm.icon_url} 
                             alt={firm.name}
                             className="w-8 h-8 mr-3 rounded"
                             onError={(e) => {
@@ -385,14 +385,14 @@ export default function Dashboard() {
                           </div>
                         </div>
                         <div className="text-right">
-                          <p className="text-sm font-medium text-green-600">{firm.profitSplit}</p>
+                          <p className="text-sm font-medium text-green-600">{firm.profit_split}</p>
                           <p className="text-xs text-gray-500">Profit Split</p>
                         </div>
                       </div>
                       <p className="text-sm text-gray-600 mb-3">{firm.description.substring(0, 100)}...</p>
                       <div className="flex justify-between items-center">
                         <span className="text-sm text-gray-600">
-                          Max Drawdown: {firm.maxDrawdown}
+                          Max Drawdown: {firm.max_drawdown}
                         </span>
                         <div className="flex space-x-2">
                           <button className="text-blue-600 hover:text-blue-900">

@@ -48,7 +48,7 @@ export default function PropFirmDetail() {
           <div className="flex items-start justify-between mb-6">
             <div className="flex items-center">
               <img 
-                src={firm.iconUrl} 
+                src={firm.icon_url} 
                 alt={firm.name}
                 className="w-24 h-24 mr-6 rounded-xl shadow-lg"
                 onError={(e) => {
@@ -109,8 +109,8 @@ export default function PropFirmDetail() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-gray-600 mb-1">Capital Range</p>
-                <p className="text-lg font-bold text-gray-900">{firm.minCapital}</p>
-                <p className="text-sm text-gray-500">to {firm.maxCapital}</p>
+                <p className="text-lg font-bold text-gray-900">{firm.min_capital}</p>
+                <p className="text-sm text-gray-500">to {firm.max_capital}</p>
               </div>
               <DollarSign className="h-8 w-8 text-blue-600" />
             </div>
@@ -119,7 +119,7 @@ export default function PropFirmDetail() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-gray-600 mb-1">Profit Split</p>
-                <p className="text-2xl font-bold text-green-600">{firm.profitSplit}</p>
+                <p className="text-2xl font-bold text-green-600">{firm.profit_split}</p>
               </div>
               <TrendingUp className="h-8 w-8 text-green-600" />
             </div>
@@ -128,7 +128,7 @@ export default function PropFirmDetail() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-gray-600 mb-1">Max Drawdown</p>
-                <p className="text-2xl font-bold text-orange-600">{firm.maxDrawdown}</p>
+                <p className="text-2xl font-bold text-orange-600">{firm.max_drawdown}</p>
               </div>
               <TrendingUp className="h-8 w-8 text-orange-600" />
             </div>
@@ -230,7 +230,7 @@ export default function PropFirmDetail() {
                   className="flex items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
                 >
                   <img 
-                    src={relatedFirm.iconUrl} 
+                    src={relatedFirm.icon_url} 
                     alt={relatedFirm.name}
                     className="w-12 h-12 mr-4 rounded-lg"
                     onError={(e) => {
@@ -240,7 +240,7 @@ export default function PropFirmDetail() {
                   />
                   <div>
                     <h3 className="font-medium text-gray-900">{relatedFirm.name}</h3>
-                    <p className="text-sm text-gray-600">Profit Split: {relatedFirm.profitSplit}</p>
+                    <p className="text-sm text-gray-600">Profit Split: {relatedFirm.profit_split}</p>
                     <div className="flex items-center mt-1">
                       <Star className="h-3 w-3 text-yellow-500 mr-1" />
                       <span className="text-xs text-gray-500">{relatedFirm.rating}</span>

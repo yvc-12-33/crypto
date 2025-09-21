@@ -49,7 +49,7 @@ export default function ToolDetail() {
             <div className="flex items-center">
               <div className="bg-blue-100 p-4 rounded-xl mr-6">
                 <img 
-                  src={tool.iconUrl} 
+                  src={tool.icon_url} 
                   alt={tool.name}
                   className="w-16 h-16"
                   onError={(e) => {

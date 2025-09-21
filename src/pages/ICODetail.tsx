@@ -55,7 +55,7 @@ export default function ICODetail() {
           <div className="flex items-start justify-between mb-6">
             <div className="flex items-center">
               <img 
-                src={ico.iconUrl} 
+                src={ico.icon_url} 
                 alt={ico.name}
                 className="w-24 h-24 mr-6 rounded-xl shadow-lg"
                 onError={(e) => {
@@ -129,14 +129,14 @@ export default function ICODetail() {
                   <Calendar className="h-5 w-5 mr-3" />
                   <span>Start Date</span>
                 </div>
-                <span className="font-medium text-gray-900">{ico.startDate}</span>
+                <span className="font-medium text-gray-900">{ico.start_date}</span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-gray-600">
                   <Calendar className="h-5 w-5 mr-3" />
                   <span>End Date</span>
                 </div>
-                <span className="font-medium text-gray-900">{ico.endDate}</span>
+                <span className="font-medium text-gray-900">{ico.end_date}</span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-gray-600">
@@ -256,7 +256,7 @@ export default function ICODetail() {
                   className="flex items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
                 >
                   <img 
-                    src={relatedICO.iconUrl} 
+                    src={relatedICO.icon_url} 
                     alt={relatedICO.name}
                     className="w-12 h-12 mr-4 rounded-lg"
                     onError={(e) => {
